@@ -4,12 +4,14 @@ import com.ori.fm.impl.ForgettingMap;
 
 /**
  * 
- * In this test three threads puts entries in to a single ForgettingMap object simultaneously 
- * and tries to modify the values with its own value.  They key used by all three threads are 
- * same, so there is a very high chances that it will modify the value which was not set by 
- * that thread. The failure scenario can be proved by calling the longWorkNotThreadSafe(Thread_name) 
- * method which are commented. A thread safe method V put(K key, V value) on the Map is provided 
- * which blocks the ForgettingMap object till it return the value added to the Map to the caller.
+ * In this test three threads put entries in to the ForgettingMap object simultaneously 
+ * and tries to modify the values with its own value if the key already exists. The set of  
+ * keys used by all three threads are same, so there is a very high chances that it will 
+ * modify the value which was not set by that thread. The failure scenario can be demonstrate 
+ * by calling the longWorkNotThreadSafe(Thread_name) method which are commented. A thread safe 
+ * method V put(K key, V value) on the Map is provided which holds the ForgettingMap object 
+ * monitor till it returns the value corresponding to the key, which was added to the Map 
+ * back to the caller.
  * 
  * * @author T1076073
  */
