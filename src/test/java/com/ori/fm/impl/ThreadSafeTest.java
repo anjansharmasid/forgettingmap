@@ -51,7 +51,7 @@ public class ThreadSafeTest {
     			String actualValues = forgettingMapTH.put(key, value);
     			if(! value.equals(actualValues)) {
     				System.out.println("Object is being tempered by other thread. Expected :"+ value +" Found:"+actualValues+ " by thread "  + thread_name);
-    				System.out.println("Failed : Thread safty test PASS");
+    				System.out.println("Failed : Thread safty test Failed.");
     				System.exit(1);
     			}
     	}
