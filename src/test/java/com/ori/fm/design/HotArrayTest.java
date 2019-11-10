@@ -4,9 +4,10 @@ import com.ori.fm.design.HotArray;
 
 import junit.framework.TestCase;
 
-/** This tests are done to ensure that the behaviours of the Array which 
- * are going to be used to implemented the Forgetting  Map is correct. Noly the behaviours
- * of the HotArray class is implemented,  and this class remains just as a template.
+/** 
+ * This tests are done to ensure that the behaviours of the Array which is going to 
+ * be used to implemented the Forgetting Map is correct. Only the behaviours of the 
+ * HotArray class is implemented, and this class remains just as a template.
  * 
  * @author T1076073
  *
