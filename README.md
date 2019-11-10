@@ -8,14 +8,13 @@
 </p>
 <p><strong><u>Solution:</u></strong></p>
 <p><strong>Design description:</strong></p>
-<p> The solution is implemented with an array data structure.  This array is used inside an object to store the elements. Elements are added to the top of the array and existing elements are pushed down the array. When elements reaches the end of the array, they are discarded. This behaviour of the object gives the ability to forget old and unused elements. When an element is searched (find) on the array, the element is swapped  to the top location of the array. All elements which are on the top of the searched element are moved one place down.</p>
-<p>To facilitate thread safety, methods to put and get element are made synchronized. A combine synchronized put method is given which first adds element and then makes a find call with the key to make sure that the value is not modified immediately by other thread and the call is guaranteed that the values is not altered or deleted during the call. </p>         
-<p> This is one of the solutions out of many possible solutions. 
-This solution is implemented as it uses very basic data structure and very simple. It does not use any heavy operations like object copy or object comparison. It is relatively less memory consumed solution. It may have higher computational time for very big arrays.</p>           
+<p> The solution is implemented with an array data structure.  This array is used inside an object to store the elements. Elements are added to the top of the array and existing elements are pushed down the array. When elements reach the end of the array, they are discarded. This behaviour of the object gives the ability to forget old and unused elements. When an element is searched (find) on the array, the element is swapped  to the top location of the array. All elements which are on the top of the searched element are moved one place down.</p>
+<p>To facilitate thread safety, methods to put and get element are made synchronized. A combine synchronized put method is given which first adds element and then makes a find call with the key to make sure that the value is not modified immediately by other threads and the call is guaranteed that the values are not altered or deleted during the call. </p>         
+<p> This is one of the maney possiable solutions. This solution is implemented as it uses very basic data structure and is very simple. It does not use any heavy operations like object copy or object comparison. It is a relatively less memory consuming solution. It may have higher computational time for very big arrays.</p>           
 <p>Few jUnit test classes are provided to test the desired behaviour.  There is a separate test which ensures thread safety.
 </p>
 <p>
-  <a href="https://github.com/anjansharmasid/forgettingmap/blob/master/src/main/java/com/ori/fm/design/HotArray.java" rel="noopener noreferrer" target="_blank">HotArray</a>: This class is used as the design template. It has a fix size, enables addition of elements in the front, discards old elements to accommodate new elements once its max size is reached. The class is not used in the construction of the Map. This class is provided to show the design principle only.
+  <a href="https://github.com/anjansharmasid/forgettingmap/blob/master/src/main/java/com/ori/fm/design/HotArray.java" rel="noopener noreferrer" target="_blank">HotArray</a>: This class is used as the design template. It has a fixed size, enables addition of elements in the front, discards old elements to accommodate new elements once its max size is reached. The class is not used in the construction of the Map. This class is provided to show the design principle only.
 </p>
 <p>
   <br>
