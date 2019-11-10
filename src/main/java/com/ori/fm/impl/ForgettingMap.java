@@ -2,13 +2,13 @@ package com.ori.fm.impl;
 
 /**
  * Basic java Map class.  The size of the Map is fixed with a default values of 1. 
- * Entries are always added at the top of the Array which implements the Map functionality.  
- * When a find operation is performed on the Map, the corresponding entity is bring back to 
- * the top of the Array which implements the Map. Once the Array which implements its max size 
- * which is passed through the Map constructor, it discard the entity which is at the 
- * bottom of the Array. It has three thread safe methods.  The method  V put(K key, V value) 
- * is the best as it blocks add() and find() grunting the called that entity values is 
- * not modified immediately after add by other thread.
+ * elements are always added at the top of the Array which implements the Map functionality.  
+ * When a find operation is performed on the Map, the corresponding element is brought to 
+ * the top of the Array which implements the Map. Once the Array reaches its max size, 
+ * which is passed through the Map constructor, it discards the entity which is at the 
+ * bottom of the Array. It has three thread safe methods. The method V put(K key, V value) 
+ * is the best as it blocks add() and find() methods grunting the called that entity values is 
+ * not modified immediately after it was added to the map by other threads.
  * 
  * @author T1076073
  *
