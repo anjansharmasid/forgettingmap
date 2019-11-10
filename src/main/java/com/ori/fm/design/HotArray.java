@@ -4,14 +4,12 @@ package com.ori.fm.design;
  * 
  * @author T1076073
  * 
- * Design of a Forgetting Map using  java Arrays
- * 
- * This is a Test class which demonstrates the design logic Only.
- * 
- * This class implements a Java Arrays Data structure to keep track of what 
- * entries are being added and accessed to/by the Map. Position of the unused 
- * KeyValuePair are pushed down this Array. Every add() and find() operation 
- * on the Map triggers the array element swap.
+ * Design of a Forgetting Map using  java Arrays. This is a POC class which 
+ * demonstrates the design logic. This class implements a Java Arrays data 
+ * structure to keep track of what entries (KeyValuePair) are being added  
+ * to the Map , what  has been searched on the Map. Position of the unused 
+ * entries (KeyValuePair) are pushed down this Array. Every add() and find() 
+ * operation on the Map triggers the array element swap.
  *
  */
 
